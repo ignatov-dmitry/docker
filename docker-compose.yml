@@ -53,13 +53,11 @@ services:
     environment:
       PMA_USER: root
       PMA_PASSWORD: itaQmtXh
+      PMA_HOST: mysql
       UPLOAD_LIMIT: 1G
       PMA_ARBITRARY: 1
     links:
       - mysql
-    volumes:
-      - ./phpmyadmin/config/config.inc.php:/etc/phpmyadmin/config.user.inc.php
-
     networks:
       - php-network
 
