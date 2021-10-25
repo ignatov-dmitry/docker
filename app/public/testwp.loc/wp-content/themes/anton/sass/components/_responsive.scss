@@ -1,0 +1,115 @@
+.zoomWindowContainer{
+    display: none !important;
+}
+@media (min-width: 1000px) and (max-width: 1360px){
+    #pbr-masthead{
+        .user-out{
+            .dropdown-toggle{
+                span{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@media (min-width: $screen-md) {
+    .widget-team{
+        .col-lg-5,.col-md-5{
+            width: 20%;
+        }
+    }    
+}
+@media screen and (max-width: $screen-md-min) {
+    .row-offcanvas-right {
+        @include rtl-right(0);
+    }
+    .row-offcanvas-left {
+        @include rtl-left(0);
+    }
+    .row-offcanvas-right
+    .sidebar-offcanvas { 
+        @include rtl-right(-50%);
+    }
+    .row-offcanvas-right.active {
+        @include rtl-right(50%);
+    }
+    .row-offcanvas-left.active {
+        @include rtl-left(0);
+    }  
+    .product-block{
+        .button-action{
+            display: none !important;
+        }
+    }          
+} 
+@media (max-width: $screen-sm){
+    #pbr-masthead{
+        .logo-theme{
+            border-bottom: 1px solid #ebebeb;
+            padding: 20px 0 !important;
+            text-align: center;
+        }
+    }
+    #pbr-masthead.pbr-header-default .search_cart{
+        padding-top: 23px;
+    }
+    .pbr-mainmenu-mobile{
+        margin: 12px 0 15px;
+        .icon-bars{
+            margin-top: 8px !important;
+        }
+    }
+    .rev_slider{
+        .tparrows{
+            display: none !important;
+        }
+        .tp-bullets{
+            top: 110% !important;
+        }
+    }
+}
+@media (min-width: $screen-xs) and (max-width: $screen-sm){
+    #popupNewsletterModal{
+        display: none;
+    }
+    .modal-backdrop.in{
+        display: none;
+    }
+    .modal-open{
+        overflow: visible !important;
+    }
+}
+@media screen and (max-width: $screen-xs){
+    #popupNewsletterModal{
+        display: none;
+    }
+    .modal-backdrop.in{
+        display: none;
+    }
+    .modal-open{
+        overflow: visible !important;
+    }
+    .sidebar-offcanvas {
+        width: 80%;
+        @include rtl-left(-85%);
+    }
+    .row-offcanvas-right
+    .sidebar-offcanvas {
+        @include rtl-right(-85%);
+    }
+    .row-offcanvas-right.active {
+        @include rtl-right(85%);
+    }
+} 
+@media (max-width: $screen-phone){        
+    #search_popup{
+        &.search_modal{
+            .modal{
+                overflow: visible;
+            }
+        }
+    }
+    .carousel-controls{
+        display: none !important;
+    }
+}

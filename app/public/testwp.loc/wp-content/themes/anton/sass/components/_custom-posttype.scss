@@ -1,0 +1,393 @@
+/*------------------------------------*\ 
+    portfolio
+\*------------------------------------*/
+.single-portfolio{
+	.header-title{ 
+		.entry-title{
+			margin-top: 0;
+		}
+		.btn{
+			padding-left: 0;
+			padding-right: 0;
+			&::hover{
+				text-decoration: none;
+			}
+		}
+	}
+	.post-area{
+		.entry-thumb{
+			margin-bottom: $theme-margin;
+			img{
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+}
+.portfolio-masonry-entry{
+	margin-bottom: 30px;
+	&.nopadding{
+		margin-bottom: 0;
+	}
+}  
+.ih-item.square{
+    position: relative;
+    .info{
+        backface-visibility: hidden;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        top: 0;
+        background: #333333;
+        color: $white;
+        > *{
+            color: $white;
+        }
+        h3{
+            text-transform: uppercase;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            background: #000;
+            margin: 30px 0 0 0;
+            font-size: $font-size-base + 1;
+        }
+        p{
+            font-style: italic;
+            position: relative;
+            color: #bbb;
+            padding: 20px 20px 20px;
+            text-align: center;
+            font-size: $font-size-base;
+        }
+    }
+}
+.ih-item.square.effect16{
+    .info{
+        @include opacity(0);
+        background: $theme-color;
+        @include transition(all 0.35s);
+        @media(max-width: $screen-sm-max){
+            padding-top: 10px!important;
+        }
+        @media(max-width: $screen-xs-max){
+          display: none!important;
+        }
+        h3{
+            background: none;
+            a{
+              color: $black!important;
+              @include transition(all 0.35s);
+              &:hover{
+                color: $white!important;
+              }
+            }
+        }
+        .description{
+            display: none;
+        }
+        .created, .zoom{
+            display: block!important;
+            visibility: visible!important;
+            padding: 0;
+            color: $white;
+            font-weight: 400;
+        }
+        .zoom i{
+          border: 1px solid $white!important;
+          @include size(30px,30px);
+          line-height: 28px;
+        }
+        .info-inner{
+            position: absolute;
+            top: 50%;
+            margin-top: -60px;
+            left: 0;
+            @include size(100%, auto);
+            z-index: 1;
+            h3{
+                margin: 0;
+            }
+        }
+    }
+    &:hover{
+        .info{
+            @include opacity(1);
+        }     
+    }
+}
+
+.ih-item.square.effect16{
+    .info{
+        @include opacity(0);
+        background: $theme-color;
+        @include transition(all 0.35s);
+        @media(max-width: $screen-sm-max){
+            padding-top: 10px!important;
+        }
+        @media(max-width: $screen-xs-max){
+          display: none!important;
+        }
+        h3{
+            background: none;
+            a{
+              color: $black!important;
+              @include transition(all 0.35s);
+              &:hover{
+                color: $white!important;
+              }
+            }
+        }
+        .description{
+            display: none;
+        }
+        .created, .zoom{
+            display: block!important;
+            visibility: visible!important;
+            padding: 0;
+            color: $white;
+            font-weight: 400;
+        }
+        .zoom i{
+          border: 1px solid $white!important;
+        }
+        .info-inner{
+            position: absolute;
+            top: 50%;
+            margin-top: -60px;
+            left: 0;
+            @include size(100%, auto);
+            z-index: 1;
+            h3{
+                margin: 0;
+            }
+        }
+    }
+    &:hover{
+        .info{
+            @include opacity(1);
+        }     
+    }
+}
+/*
+* form search popup
+ */
+#myModal{
+    &:after{
+        background: rgba(0,0,0,0.5);
+        content: "";
+        left: 0;
+        position: absolute;
+        top: 0;
+        z-index: 9;
+        @include square(100%);
+    }
+    .modal-dialog.modal-lg{
+        top: 30%;
+        z-index: 999;
+    }
+}
+.search_modal{
+    .modal-content{
+        padding: 40px;
+    }
+    .close{
+        background: $white;
+        border: none;
+        color: $link-color;
+        font-size: 25px;
+        line-height: 0;
+        position: absolute;
+        top: 6px;
+        height: 26px;
+        right: 6px;
+    }
+    .form-control{
+        height: 47px;
+        border: none;
+    }
+    .input-group{
+        display: table;
+        border: 1px solid #e6e6e6;
+    }
+    .input-group-addon{
+        border: none;
+        cursor: pointer;
+        padding: 2px 23px;
+        &:hover{
+            .fa-search{
+                color: $link-hover-color;
+            }                
+        }
+    }
+    input[type="submit"]{
+        border: none;
+        background: transparent;
+        font-size: $font-size-base + 14;
+        font-family: "Ionicons";
+        padding: 2px;
+    }
+    .icons{
+        font-size: $font-size-base + 8;
+        color: $black;
+        text-align: middle;
+    }   
+    .fa-search{
+        font-size: $font-size-base + 1;
+
+    }
+}
+
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+.sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    z-index: 999;
+    @include box-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+    @include rtl-text-align-left();
+    background-color: $white;
+    @include rtl-left(-50%);
+    @include transition(all 0.3s ease-out);
+    &.active {
+        @include rtl-left(0);
+    }
+}
+.btn-close{
+    background: transparent;
+    color: $white;
+    font-size: $font-size-base + 4;
+}
+.btn-offcanvas {
+    background: transparent;
+    border: 1px solid $theme-color;
+    color: $black;
+    margin-left: 5px;
+    margin-top: 5px;
+    padding: 0;
+    &:hover{
+        color: $link-hover-color;
+    }
+}
+.offcanvas-head {
+    background-color: $link-hover-color;
+    padding: 5px;
+    button {
+        padding: 9px 15px 10px;
+        @include rtl-margin-right(10px);
+    }
+    span{
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
+.row-offcanvas {
+    position: relative;
+    @include transition(all 0.25s ease-out);
+    &.active {
+        @include rtl-left(0);
+    }
+}
+.offcanvas-showright {
+    background: rgba($theme-color,0.8);
+    position: relative;
+    @include transition(all 0.25s ease-out);
+    width: 400px;
+    position: absolute;
+    right: -800px;
+    top: 0;
+    z-index: 1000;
+    display: block;
+    padding: 50px 0;
+    &.active {
+        display: block;
+        right: 0;
+    }
+    .showright{
+        background-color: $white;
+        @include size(40px,40px);
+        border: none;
+        @include rtl-margin-right(50px);
+        .fa{
+            color: $theme-color;
+        }
+    }
+}
+.navbar-offcanvas{
+    border: none;
+}
+#main-menu-offcanvas{
+    float: none;
+    display: block;
+    > li{
+        position: relative;            
+        display: block;
+        float: none;
+        a{
+            border-bottom: 1px solid $border-color;
+            display: block;
+        }
+        .caret{
+            position: absolute; 
+            right: 10px;
+            top: 10px;
+            @include size(22px, 22px);
+            border: none;
+            z-index: 9;
+            &:hover{
+                cursor: pointer;
+            }
+            &:after{
+                font-family: FontAwesome;
+                content: "\f107";
+                top: 0px;
+                left: 5px;
+                position: absolute;
+                z-index: 9;
+            }
+        }
+        ul.dropdown-menu{
+            position: relative;
+            float: none;
+            border: none;
+            padding: 0;
+            @include box-shadow(none);
+            li a{
+                padding-top: 12px;                
+                padding-bottom: 12px;
+                padding-left: 30px;
+                &:hover{
+                    color: $link-hover-color;
+                    background-color: transparent;
+                }
+            }
+        }
+        ul.sub-menu{
+            display: block;
+            list-style-type: none;
+            padding: 0;
+            a{
+                padding: 10px 0px 10px 30px;
+            }
+            .sub-menu a{
+                padding-left: 60px;
+            }
+        }
+    }
+    li.active > a{
+        background: transparent;
+        color: $link-hover-color;
+    }
+}
+.home{
+    .pbr-breadscrumb{
+        display: none !important;
+    }
+}
