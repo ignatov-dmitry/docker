@@ -25,6 +25,7 @@ services:
       - mysql
     volumes:
       - ./app:/app
+      -  ./php.ini:/usr/local/etc/php/php.ini
     networks:
       - php-network
 
