@@ -1,0 +1,123 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-14 14:42+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ippsum.php:28
+msgid "Header Left Widgets"
+msgstr ""
+
+#: ippsum.php:34
+msgid "Header Right Widgets"
+msgstr ""
+
+#: ippsum.php:40
+msgid "Header Menu Widgets"
+msgstr ""
+
+#: ippsum.php:46
+msgid "Header Logo Widgets"
+msgstr ""
+
+#: ippsum.php:52
+msgid "Footer Widgets"
+msgstr ""
+
+#: ippsum.php:69
+msgid "Portfolio"
+msgstr ""
+
+#: ippsum.php:70
+msgid "Portfolio Item"
+msgstr ""
+
+#: ippsum.php:79
+msgid "Portfolio Categories"
+msgstr ""
+
+#: ippsum.php:109
+msgid "BB Button"
+msgstr ""
+
+#: ippsum.php:111
+msgid "Button with icon, text and link."
+msgstr ""
+
+#: ippsum.php:229
+msgid "Icon:"
+msgstr ""
+
+#: ippsum.php:239
+msgid "Filter..."
+msgstr ""
+
+#: ippsum.php:259
+msgid "Text:"
+msgstr ""
+
+#: ippsum.php:263
+msgid "Style:"
+msgstr ""
+
+#: ippsum.php:279
+msgid "Color scheme:"
+msgstr ""
+
+#: ippsum.php:301
+msgid "URL or slug:"
+msgstr ""
+
+#: ippsum.php:305
+msgid "Target:"
+msgstr ""
+
+#: ippsum.php:321
+msgid "CSS extra class:"
+msgstr ""
+
+#: framework_bt_plugin/framework.php:20
+msgid "Custom JS"
+msgstr ""
+
+#: framework_bt_plugin/framework.php:46 framework_bt_plugin/framework.php:169
+#: framework_bt_plugin/framework.php:292 framework_bt_plugin/framework.php:421
+msgid "Share on Facebook"
+msgstr ""
+
+#: framework_bt_plugin/framework.php:70 framework_bt_plugin/framework.php:193
+#: framework_bt_plugin/framework.php:316 framework_bt_plugin/framework.php:436
+msgid "Share on Twitter"
+msgstr ""
+
+#: framework_bt_plugin/framework.php:95 framework_bt_plugin/framework.php:218
+#: framework_bt_plugin/framework.php:340
+msgid "Share on LinkedIn"
+msgstr ""
+
+#: framework_bt_plugin/framework.php:119 framework_bt_plugin/framework.php:242
+#: framework_bt_plugin/framework.php:364 framework_bt_plugin/framework.php:467
+msgid "Share on VK"
+msgstr ""
+
+#: framework_bt_plugin/framework.php:143 framework_bt_plugin/framework.php:266
+#: framework_bt_plugin/framework.php:388 framework_bt_plugin/framework.php:483
+msgid "Share on WhatsApp"
+msgstr ""
+
+#: framework_bt_plugin/framework.php:451
+msgid "Share on Linkedin"
+msgstr ""
